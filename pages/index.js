@@ -1,206 +1,137 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Meta from '@components/Meta'
-import Header from '@components/Header'
+import Meta from "@components/Meta";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
+import Js from "@components/Js";
 
-import Footer from '@components/Footer'
-import Js from '@components/Js'
+export default function Home() {
+  return (
+    <>
+      <Meta />
+      <Head>
+        <title>Terms and conditions | Ashok Seeds and Plants</title>
+        <meta
+          name="description"
+          content="We reuest our users/customers to read our Terms & Conditions before work wth us. Thank you!"
+        />
+      </Head>
+      <div className="page-wrapper">
+        <Header />
 
-import SocialLinks from "@components/SocialLinks";
-
-import React from "react";
-import { useState } from "react";
-import axios from "axios";
-
-const Contact = () => {
-
-    const [candidat, setCandidat] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        msg_subject: "",
-        message: "",
-    });
-    const [user, setUser] = useState()
-
-    const onSubmit = async (e) => {
-        e.preventDefault();
-        if (candidat.name === "")
-            return alert("Your name is empty.");
-
-
-        let token = 'recaptcha token';
-        let formName = 'Contact page';
-
-        axios.post('https://crm.ashokseedplant.com/api/ezforms/submit', { token, formData: JSON.stringify(candidat) })
-            .then((res) => {
-                // console.log(res)
-            })
-            .catch((error) => {
-                // error.response.status Check status code
-            }).finally(() => {
-                //Perform action in always
-            });
-
-
-    };
-
-
-    return (
-        <>
-            <Meta />
-            <Head>
-                <title>Contact | Ashok Seeds and Plants</title>
-                <meta name="description" content="We are India's leading Seeds and Plants Provider. We are working to achieve sustainable development goals through tree planting." />
-
-            </Head>
-            <div className="page-wrapper">
-                <Header />
-
-                <div className="content-wrapper">
-                    <div className="breadcrumb-wrap bg-f br-1">
-                        <div className="container">
-                            <div className="breadcrumb-title">
-                                <h2>Contact Us</h2>
-                                <ul className="breadcrumb-menu list-style">
-                                    <li><a href="https://www.ashokseedplant.com/">Home </a></li>
-                                    <li>Contact Us</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <section className="contact-us-wrap ptb-100">
-                        <div className="container">
-                            <div className="section-title style1 text-center mb-40">
-                                <span>Contact Us<img src="/img/section-shape.png" alt="Image" /></span>
-                                <h2>Get In Touch With Us</h2>
-                            </div>
-                            <div className="row gx-5 justify-content-center">
-                                <div className="col-lg-8">
-                                    <div className="contact-form">
-                                        <form className="form-wrap" name='contactForm' id="contactForm" onSubmit={onSubmit}>
-                                            <div className="row">
-                                                <div className="col-md-6 col-sm-6">
-                                                    <div className="form-group">
-                                                        <input type="text" name="name" placeholder="Name*" id="name"
-                                                            required data-error="Please enter your name" onChange={() => {
-                                                                setCandidat({ ...candidat, name: event.target.value });
-                                                            }} />
-                                                        <div className="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6 col-sm-6">
-                                                    <div className="form-group">
-                                                        <input type="email" name="email" id="email" required
-                                                            placeholder="Email*"
-                                                            data-error="Please enter your email" onChange={() => {
-                                                                setCandidat({ ...candidat, email: event.target.value });
-                                                            }} />
-                                                        <div className="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6 col-sm-6">
-                                                    <div className="form-group">
-                                                        <input type="text" name="phone" id="phone" required
-                                                            placeholder="Phone*"
-                                                            data-error="Please enter your phone" onChange={() => {
-                                                                setCandidat({ ...candidat, phone: event.target.value });
-                                                            }} />
-                                                        <div className="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6 col-sm-6">
-                                                    <div className="form-group">
-                                                        <input type="text" name="msg_subject" placeholder="Subject*"
-                                                            id="msg_subject" required
-                                                            data-error="Please enter your subject" onChange={() => {
-                                                                setCandidat({ ...candidat, msg_subject: event.target.value });
-                                                            }} />
-                                                        <div className="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-12">
-                                                    <div className="form-group v1">
-                                                        <textarea name="message" id="message"
-                                                            placeholder="Your Messages.." cols="30" rows="10"
-                                                            required
-                                                            data-error="Please enter your message" onChange={() => {
-                                                                setCandidat({ ...candidat, message: event.target.value });
-                                                            }} />
-                                                        <div className="help-block with-errors"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-12">
-                                                    <div className="form-group">
-                                                        <div className="form-check checkbox">
-                                                            <input
-                                                                name="gridCheck"
-                                                                value="Agree to tos."
-                                                                className="form-check-input"
-                                                                type="checkbox"
-                                                                id="gridCheck"
-                                                                required onChange={() => {
-                                                                    setCandidat({ ...candidat, gridCheck: event.target.value });
-                                                                }}
-                                                            />
-                                                            <label className="form-check-label" htmlFor="gridCheck">
-                                                                I agree to the <a className="link style1"
-                                                                    href="#">Terms &amp; Conditions</a> and <a
-                                                                        className="link style1" href="#">Privacy
-                                                                    Policy</a>
-                                                            </label>
-                                                            <div
-                                                                className="help-block with-errors gridCheck-error"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-12">
-                                                    <button type="submit" className="btn style1 w-100 d-block">Send
-                                                        Message
-                                                    </button>
-                                                    <div id="msgSubmit" className="h3 text-center hidden"></div>
-                                                    <div className="clearfix"></div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4">
-                                    <div className="contact-item-wrap">
-                                        <div className="contact-item">
-                                            <h3>Our Address</h3>
-                                            <p>506, Ashok Chauraha, Bargarh Chitrakoot UP-210208</p>
-                                        </div>
-                                        <div className="contact-item">
-                                            <h3>Email Address</h3>
-                                            <a href="mailto:contact@ashokseedplant.com">contact@ashokseedplant.com</a>
-                                        </div>
-                                        <div className="contact-item">
-                                            <h3>Support (India Working Time)</h3>
-                                            <a href="tel:+91-9453-111-377">+91-9453-111-377</a>
-                                        </div>
-                                        <div className="contact-item">
-                                            <h3>Follow us</h3>
-
-                                            <SocialLinks style={'style2'} />
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-
-
-                <Footer />
+        <div className="content-wrapper">
+          <div className="breadcrumb-wrap bg-f br-1">
+            <div className="container">
+              <div className="breadcrumb-title">
+                <h2>Terms and conditions</h2>
+                <ul className="breadcrumb-menu list-style">
+                  <li>
+                    <a href="/">Home </a>
+                  </li>
+                  <li>Terms and conditions</li>
+                </ul>
+              </div>
             </div>
-            <Js />
-        </>
-    )
+          </div>
+
+          <section className="terms-wrap ptb-100 pb-75">
+            <div className="container">
+              <div className="row">
+                <div className="col-xl-10 offset-xl-1">
+                  <div className="single-terms">
+                    <h3>Terms and Conditions: </h3>
+                    <p>
+                      Welcome to our website. If you continue to browse and use
+                      this website, you are agreeing to comply with and be bound
+                      by the following terms and conditions of use, which
+                      together with our privacy policy govern our relationship
+                      with you in relation to this website. If you disagree with
+                      any part of these terms and conditions, please do not use
+                      our website.
+                    </p>
+                    <p>
+                      The term 'us' or 'we' refers to the owner of the website,
+                      an environmental non-governmental organization (NGO) that
+                      aims to promote environmental awareness, conservation, and
+                      action. The term 'you' refers to the user or viewer of our
+                      website.
+                    </p>
+                  </div>
+                  <div className="single-terms">
+                    <h3>
+                      The use of this website is subject to the following terms
+                      of use:
+                    </h3>
+                    <ol>
+                      <li>
+                        The content of the pages of this website is for your
+                        general information and use only. It is subject to
+                        change without notice.
+                      </li>
+                      <li>
+                        This website uses cookies to monitor browsing
+                        preferences. If you do allow cookies to be used, some
+                        personal information may be stored by us for use by
+                        third parties.
+                      </li>
+                      <li>
+                        Neither we nor any third parties provide any warranty or
+                        guarantee as to the accuracy, timeliness, performance,
+                        completeness or suitability of the information and
+                        materials found or offered on this website for any
+                        particular purpose. You acknowledge that such
+                        information and materials may contain inaccuracies or
+                        errors and we expressly exclude liability for any such
+                        inaccuracies or errors to the fullest extent permitted
+                        by law.
+                      </li>
+                      <li>
+                        Your use of any information or materials on this website
+                        is entirely at your own risk, for which we shall not be
+                        liable. It shall be your own responsibility to ensure
+                        that any products, services or information available
+                        through this website meet your specific requirements.
+                      </li>
+                      <li>
+                        This website contains material which is owned by or
+                        licensed to us. This material includes, but is not
+                        limited to, the design, layout, look, appearance and
+                        graphics. Reproduction is prohibited other than in
+                        accordance with the copyright notice, which forms part
+                        of these terms and conditions.
+                      </li>
+                      <li>
+                        All trademarks reproduced in this website, which are not
+                        the property of, or licensed to the operator, are
+                        acknowledged on the website.
+                      </li>
+                      <li>
+                        Unauthorized use of this website may give rise to a
+                        claim for damages and/or be a criminal offence.
+                      </li>
+                      <li>
+                        From time to time, this website may also include links
+                        to other websites. These links are provided for your
+                        convenience to provide further information. They do not
+                        signify that we endorse the website(s). We have no
+                        responsibility for the content of the linked website(s).
+                      </li>
+                      <li>
+                        Your use of this website and any dispute arising out of
+                        such use of the website is subject to the laws of the
+                        country where we are registered as an NGO.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <Footer />
+      </div>
+      <Js />
+    </>
+  );
 }
-
-
-export default Contact;
