@@ -1,3 +1,7 @@
 module.exports = {
-    trailingSlash: true,
-}
+  trailingSlash: true,
+  i18n: {
+    locales: ["en", "fr", "hi"],
+    defaultLocale: "en",
+  },
+};
