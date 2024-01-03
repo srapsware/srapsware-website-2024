@@ -1,3 +1,8 @@
+import '/styles/style.css'
+
+
+
+
 function Application({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
