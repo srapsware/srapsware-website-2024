@@ -108,7 +108,7 @@ export default function Header(props) {
                                   className="dropdown-item"
                                   href="#"
                                 >
-                                  <i class="fa-brands fa-joomla"></i> Joomla Development
+                                  <i class="fa-regular fa-laptop-mobile"></i> Responsive Website Design
                                 </a>
                               </li>
                             </ul>
