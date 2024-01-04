@@ -5,7 +5,6 @@ export default function Footer() {
 
   return (
     <>
-      <>
         <footer className="bg-navy text-inverse">
           <div className="container pt-15 pt-md-17 pb-13 pb-md-15">
             <div className="d-lg-flex flex-row align-items-lg-center">
@@ -219,9 +218,5 @@ export default function Footer() {
           </svg>
         </div>
       </>
-
-      <script src="/assets/js/plugins.js"></script>
-      <script src="/assets/js/theme.js"></script>
-    </>
   );
 }
