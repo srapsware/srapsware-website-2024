@@ -205,7 +205,7 @@ body {
     font-size: .90rem;
 }
 .bg-soft-primary {
-    background-color: var(--bg-soft-primary);
+    background-color: var(--bg-color);
 }
 .card.bg-pale-yellow > .card-body h4, .card.bg-pale-red > .card-body h4, .card.bg-pale-leaf > .card-body h4, .card.bg-pale-primary > .card-body h4{
     color: var(--bg-card-title);
@@ -233,4 +233,11 @@ h2.display-6.mb-3 {
 }
 .post-content.mb-5 img {
     max-width: 100%;
+}
+
+
+
+[data-theme='dark'] [data-hide-on-theme='dark'],
+[data-theme='light'] [data-hide-on-theme='light'] {
+  display: none;
 }

@@ -25225,10 +25225,10 @@ figure img {
   border-color: var(--bs-border-soft-aqua) !important;
 }
 .border-soft-navy {
-  border-color: var(--bs-border-soft-navy) !important;
+  border-color: var(--bs-border-soft-navy);
 }
 .border-soft-ash {
-  border-color: var(--bs-border-soft-ash) !important;
+  border-color: var(--bs-border-soft-ash);
 }
 .zindex-n {
   z-index: -1;
@@ -25237,13 +25237,13 @@ figure img {
   z-index: 1;
 }
 .bg-soft-primary {
-  background-color: var(--bs-soft-primary) !important;
+  background-color: var(--bs-soft-primary);
 }
 .bg-soft-blue {
-  background-color: var(--bs-soft-blue) !important;
+  background-color: var(--bs-soft-blue);
 }
 .bg-soft-sky {
-  background-color: var(--bs-soft-sky) !important;
+  background-color: var(--bs-soft-sky);
 }
 .bg-soft-purple {
   background-color: var(--bs-soft-purple) !important;

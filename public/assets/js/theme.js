@@ -7,7 +7,7 @@ var theme = {
    * Do not forget to remove dependency from src/js/vendor/ and recompile.
    */
   init: function () {
-    theme.stickyHeader();
+    //theme.stickyHeader();
     theme.subMenu();
     theme.offCanvas();
     theme.isotope();

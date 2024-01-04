@@ -1,32 +1,27 @@
 import Link from "next/link";
+import Image from 'next/image'
+import { useTheme } from 'next-themes'
 import SocialLinks from "@components/SocialLinks";
 import JsLoader from "@components/JsLoader";
 import { useEffect } from "react";
 
 import { useRouter } from "next/router";
 
-const toggleTheme = (e) => {
-  if (localStorage.getItem("clim_theme") === "theme-dark") {
-    localStorage.setItem("clim_theme", "theme-light");
-    document.documentElement.className = "theme-light";
-  } else {
-    localStorage.setItem("clim_theme", "theme-dark");
-    document.documentElement.className = "theme-dark";
-  }
-};
+
 export default function Header(props) {
   const router = useRouter();
-  console.log(router);
+  //console.log(router);
+  const { theme, setTheme } = useTheme();
   return (
     <>
-      <header className="wrapper bg-soft-primary">
+      <header className="wrapper bg-soft-primary fixed-top">
         <nav className="navbar navbar-expand-lg center-nav transparent navbar-light">
           <div className="container flex-lg-row flex-nowrap align-items-center">
             <div className="navbar-brand w-100">
               <Link href={'/'}>
                 <img
-                  src="/assets/img/logo-dark.png"
-                  srcSet="/assets/img/logo-dark@2x.png 2x"
+                  src="/assets/img/logo.png"
+                  srcSet="/assets/img/logo@2x.png 2x"
                   alt=""
                 />
               </Link>
@@ -499,13 +494,8 @@ export default function Header(props) {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvas-info"
-                  >
-                    <i className="uil uil-info-circle" />
-                  </a>
+                <button className="btn btn-link" data-hide-on-theme='light' onClick={() => setTheme('light')}><i class="fa-duotone fa-1-5-x fa-sun-bright"></i></button>
+                <button className="btn btn-link" data-hide-on-theme='dark' onClick={() => setTheme('dark')}><i class="fa-duotone fa-1-5-x fa-moon"></i></button>
                 </li>
                 <li className="nav-item d-lg-none">
                   <button className="hamburger offcanvas-nav-btn">
