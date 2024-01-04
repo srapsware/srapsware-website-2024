@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="bg-navy text-inverse">
           <div className="container pt-15 pt-md-17 pb-13 pb-md-15">
             <div className="d-lg-flex flex-row align-items-lg-center">
-              <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25 text-white footer-talk">
+              <h3 className="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25 text-white footer-talk">
                 Excited? Let’s Talk
                 <span>
                   You’re our first priority.
@@ -34,39 +34,39 @@ export default function Footer() {
                     srcSet="/assets/img/logo-light@2x.png 2x"
                     alt=""
                   />
-                  <p class="mb-4 text-white">
-                    <span class="h4 text-white">{getCurrentYear() - 2010}</span>{" "}
-                    Years of code baking <i class="fa-solid fa-heart red"></i>
+                  <p className="mb-4 text-white">
+                    <span className="h4 text-white">{getCurrentYear() - 2010}</span>{" "}
+                    Years of code baking <i className="fa-solid fa-heart red"></i>
                   </p>
                   
-                  <nav class="nav social social-white">
+                  <nav className="nav social social-white">
                     <a
                       href="https://www.facebook.com/srapsware"
                       target="_blank"
                     >
-                      <i class="uil uil-facebook-f"></i>
+                      <i className="uil uil-facebook-f"></i>
                     </a>
                     <a href="https://twitter.com/srapsware" target="_blank">
-                      <i class="uil uil-twitter"></i>
+                      <i className="uil uil-twitter"></i>
                     </a>
                     <a href="https://github.com/srapsware" target="_blank">
-                      <i class="uil uil-github"></i>
+                      <i className="uil uil-github"></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/company/srapsware"
                       target="_blank"
                     >
-                      <i class="uil uil-linkedin"></i>
+                      <i className="uil uil-linkedin"></i>
                     </a>
                     <a
                       href="https://www.youtube.com/srapsware?sub_confirmation=1"
                       target="_blank"
                     >
-                      <i class="uil uil-youtube"></i>
+                      <i className="uil uil-youtube"></i>
                     </a>
                   </nav>
-                  <p class="pt-5 mb-1">Made in the India</p>
-          <p class="since-text mb-1">
+                  <p className="pt-5 mb-1">Made in the India</p>
+          <p className="since-text mb-1">
             Since 2010&nbsp;
             <Image
       src="/assets/img/icons/india.svg"
@@ -197,8 +197,8 @@ export default function Footer() {
                 {/* /.widget */}
               </div>
               {/* /column */}
-              <div class="col-md-12 pt-6">
-        <p class="mb-4">
+              <div className="col-md-12 pt-6">
+        <p className="mb-4">
           &copy; 2010-{getCurrentYear()} Srapsware, All Rights Reserved.
         </p>
       </div>

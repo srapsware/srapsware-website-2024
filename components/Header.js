@@ -415,12 +415,12 @@ export default function Header(props) {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        <i class="fa-duotone fa-microchip"></i> Our Process
+                        <i className="fa-duotone fa-microchip"></i> Our Process
                         </a>
                       </li>
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        <i class="fa-duotone fa-buildings"></i> About Our Company
+                        <i className="fa-duotone fa-buildings"></i> About Our Company
                         </a>
                       </li>
                       <li className="nav-item">
