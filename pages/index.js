@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Meta />
       <Head>
-        <title>Terms and conditions | Ashok Seeds and Plants</title>
+        <title>Home | Srapsware</title>
         <meta
           name="description"
           content="We reuest our users/customers to read our Terms & Conditions before work wth us. Thank you!"
@@ -26,8 +26,8 @@ export default function Home() {
           <figure>
             <img
               className="w-auto"
-              src="./assets/img/illustrations/i2.png"
-              srcSet="./assets/img/illustrations/i2@2x.png 2x"
+              src="/assets/img/illustrations/i2.png"
+              srcSet="/assets/img/illustrations/i2@2x.png 2x"
               alt=""
             />
           </figure>
@@ -80,7 +80,7 @@ export default function Home() {
             <div className="card shadow-lg">
               <div className="card-body">
                 <img
-                  src="./assets/img/icons/lineal/search-2.svg"
+                  src="/assets/img/icons/lineal/search-2.svg"
                   className="svg-inject icon-svg icon-svg-md text-yellow mb-3"
                   alt=""
                 />
@@ -102,7 +102,7 @@ export default function Home() {
             <div className="card shadow-lg">
               <div className="card-body">
                 <img
-                  src="./assets/img/icons/lineal/browser.svg"
+                  src="/assets/img/icons/lineal/browser.svg"
                   className="svg-inject icon-svg icon-svg-md text-red mb-3"
                   alt=""
                 />
@@ -124,7 +124,7 @@ export default function Home() {
             <div className="card shadow-lg">
               <div className="card-body">
                 <img
-                  src="./assets/img/icons/lineal/chat-2.svg"
+                  src="/assets/img/icons/lineal/chat-2.svg"
                   className="svg-inject icon-svg icon-svg-md text-green mb-3"
                   alt=""
                 />
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="card shadow-lg">
               <div className="card-body">
                 <img
-                  src="./assets/img/icons/lineal/megaphone.svg"
+                  src="/assets/img/icons/lineal/megaphone.svg"
                   className="svg-inject icon-svg icon-svg-md text-blue mb-3"
                   alt=""
                 />
@@ -179,8 +179,8 @@ export default function Home() {
           <figure>
             <img
               className="w-auto"
-              src="./assets/img/illustrations/i3.png"
-              srcSet="./assets/img/illustrations/i3@2x.png 2x"
+              src="/assets/img/illustrations/i3.png"
+              srcSet="/assets/img/illustrations/i3@2x.png 2x"
               alt=""
             />
           </figure>
@@ -317,8 +317,8 @@ export default function Home() {
           <figure>
             <img
               className="w-auto"
-              src="./assets/img/illustrations/i6.png"
-              srcSet="./assets/img/illustrations/i6@2x.png 2x"
+              src="/assets/img/illustrations/i6.png"
+              srcSet="/assets/img/illustrations/i6@2x.png 2x"
               alt=""
             />
           </figure>
@@ -471,8 +471,8 @@ export default function Home() {
                 <div className="card-body">
                   <img
                     className="rounded-circle w-15 mb-4"
-                    src="./assets/img/avatars/te1.jpg"
-                    srcSet="./assets/img/avatars/te1@2x.jpg 2x"
+                    src="/assets/img/avatars/te1.jpg"
+                    srcSet="/assets/img/avatars/te1@2x.jpg 2x"
                     alt=""
                   />
                   <h4 className="mb-1">Coriss Ambady</h4>
@@ -503,8 +503,8 @@ export default function Home() {
                 <div className="card-body">
                   <img
                     className="rounded-circle w-15 mb-4"
-                    src="./assets/img/avatars/te2.jpg"
-                    srcSet="./assets/img/avatars/te2@2x.jpg 2x"
+                    src="/assets/img/avatars/te2.jpg"
+                    srcSet="/assets/img/avatars/te2@2x.jpg 2x"
                     alt=""
                   />
                   <h4 className="mb-1">Cory Zamora</h4>
@@ -535,8 +535,8 @@ export default function Home() {
                 <div className="card-body">
                   <img
                     className="rounded-circle w-15 mb-4"
-                    src="./assets/img/avatars/te3.jpg"
-                    srcSet="./assets/img/avatars/te3@2x.jpg 2x"
+                    src="/assets/img/avatars/te3.jpg"
+                    srcSet="/assets/img/avatars/te3@2x.jpg 2x"
                     alt=""
                   />
                   <h4 className="mb-1">Nikolas Brooten</h4>
@@ -567,8 +567,8 @@ export default function Home() {
                 <div className="card-body">
                   <img
                     className="rounded-circle w-15 mb-4"
-                    src="./assets/img/avatars/te4.jpg"
-                    srcSet="./assets/img/avatars/te4@2x.jpg 2x"
+                    src="/assets/img/avatars/te4.jpg"
+                    srcSet="/assets/img/avatars/te4@2x.jpg 2x"
                     alt=""
                   />
                   <h4 className="mb-1">Jackie Sanders</h4>
@@ -611,8 +611,8 @@ export default function Home() {
           <figure>
             <img
               className="w-auto"
-              src="./assets/img/illustrations/i8.png"
-              srcSet="./assets/img/illustrations/i8@2x.png 2x"
+              src="/assets/img/illustrations/i8.png"
+              srcSet="/assets/img/illustrations/i8@2x.png 2x"
               alt=""
             />
           </figure>
@@ -962,8 +962,8 @@ export default function Home() {
           <figure>
             <img
               className="w-auto"
-              src="./assets/img/illustrations/i5.png"
-              srcSet="./assets/img/illustrations/i5@2x.png 2x"
+              src="/assets/img/illustrations/i5.png"
+              srcSet="/assets/img/illustrations/i5@2x.png 2x"
               alt=""
             />
           </figure>
@@ -992,37 +992,37 @@ export default function Home() {
         <div className="row gx-0 gx-md-8 gx-xl-12 gy-8 align-items-center">
           <div className="col-4 col-md-2">
             <figure className="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4">
-              <img src="./assets/img/brands/c1.png" alt="" />
+              <img src="/assets/img/brands/c1.png" alt="" />
             </figure>
           </div>
           {/*/column */}
           <div className="col-4 col-md-2">
             <figure className="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4">
-              <img src="./assets/img/brands/c2.png" alt="" />
+              <img src="/assets/img/brands/c2.png" alt="" />
             </figure>
           </div>
           {/*/column */}
           <div className="col-4 col-md-2">
             <figure className="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4">
-              <img src="./assets/img/brands/c3.png" alt="" />
+              <img src="/assets/img/brands/c3.png" alt="" />
             </figure>
           </div>
           {/*/column */}
           <div className="col-4 col-md-2">
             <figure className="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4">
-              <img src="./assets/img/brands/c4.png" alt="" />
+              <img src="/assets/img/brands/c4.png" alt="" />
             </figure>
           </div>
           {/*/column */}
           <div className="col-4 col-md-2">
             <figure className="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4">
-              <img src="./assets/img/brands/c5.png" alt="" />
+              <img src="/assets/img/brands/c5.png" alt="" />
             </figure>
           </div>
           {/*/column */}
           <div className="col-4 col-md-2">
             <figure className="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4">
-              <img src="./assets/img/brands/c6.png" alt="" />
+              <img src="/assets/img/brands/c6.png" alt="" />
             </figure>
           </div>
           {/*/column */}
