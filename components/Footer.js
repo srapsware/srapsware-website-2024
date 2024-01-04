@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Footer() {
   const getCurrentYear = () => {
     return new Date().getFullYear();
@@ -68,12 +70,13 @@ export default function Footer() {
                   </nav>
                   <p class="pt-5 mb-1">Made in the India</p>
           <p class="since-text mb-1">
-            Since 2010
-            <img
-              title="India"
-              class="svg-inject in-flag"
-              src="/assets/img/icons/india.svg"
-            />
+            Since 2010&nbsp;
+            <Image
+      src="/assets/img/icons/india.svg"
+      width={27}
+      height={20}
+      alt="India"
+    />
           </p>
                   {/* /.social */}
                 </div>
@@ -84,7 +87,7 @@ export default function Footer() {
                 <div className="widget">
                   <h4 className="widget-title text-white mb-3">Get in Touch</h4>
                   <address className="pe-xl-15 pe-xxl-17">
-                    Moonshine St. 14/05 Light City, London, United Kingdom
+                  Ground Floor, Bonito Homes, Basai, Sector 70, Noida UP 201307
                   </address>
                   <a href="mailto:sales@srapsware.com">
                     sales<span className="d-none"></span>@

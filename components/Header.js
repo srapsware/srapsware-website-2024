@@ -420,17 +420,17 @@ export default function Header(props) {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        Our Process
+                        <i class="fa-duotone fa-microchip"></i> Our Process
                         </a>
                       </li>
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        About Our Company
+                        <i class="fa-duotone fa-buildings"></i> About Our Company
                         </a>
                       </li>
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        What Client Say
+                        <i class="fa-duotone fa-heart-pulse"></i> What Client Say
                         </a>
                       </li>
                     </ul>
@@ -446,17 +446,17 @@ export default function Header(props) {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        Blog and News
+                        <i class="fa-duotone fa-newspaper"></i> Blog and News
                         </a>
                       </li>
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        Make Payment
+                        <i class="fa-duotone fa-indian-rupee-sign"></i> Make Payment
                         </a>
                       </li>
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        Contact Us
+                        <i class="fa-duotone fa-messages-question"></i> Contact Us
                         </a>
                       </li>
                     </ul>
