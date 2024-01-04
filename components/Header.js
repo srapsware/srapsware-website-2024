@@ -71,7 +71,7 @@ export default function Header(props) {
                                   className="dropdown-item"
                                   href="#"
                                 >
-                                  <i class="fa-brands fa-magento"></i> Magento Development
+                                  <i className="fa-brands fa-magento"></i> Magento Development
                                 </a>
                               </li>
                               <li>
@@ -79,7 +79,7 @@ export default function Header(props) {
                                   className="dropdown-item"
                                   href="#"
                                 >
-                                  <i class="fas fa-shopping-basket"></i> Woocommerce Website
+                                  <i className="fas fa-shopping-basket"></i> Woocommerce Website
                                 </a>
                               </li>
                               <li>
@@ -87,7 +87,7 @@ export default function Header(props) {
                                   className="dropdown-item"
                                   href="#"
                                 >
-                                  <i class="fa-brands fa-wordpress"></i> WordPress Development
+                                  <i className="fa-brands fa-wordpress"></i> WordPress Development
                                 </a>
                               </li>
                               <li>
@@ -95,7 +95,7 @@ export default function Header(props) {
                                   className="dropdown-item"
                                   href="#"
                                 >
-                                  <i class="fa-brands fa-joomla"></i> Joomla Development
+                                  <i className="fa-brands fa-joomla"></i> Joomla Development
                                 </a>
                               </li>
                               <li>
@@ -103,7 +103,7 @@ export default function Header(props) {
                                   className="dropdown-item"
                                   href="#"
                                 >
-                                  <i class="fa-regular fa-laptop-mobile"></i> Responsive Website Design
+                                  <i className="fa-regular fa-laptop-mobile"></i> Responsive Website Design
                                 </a>
                               </li>
                             </ul>
@@ -425,7 +425,7 @@ export default function Header(props) {
                       </li>
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        <i class="fa-duotone fa-heart-pulse"></i> What Client Say
+                        <i className="fa-duotone fa-heart-pulse"></i> What Client Say
                         </a>
                       </li>
                     </ul>
@@ -441,17 +441,17 @@ export default function Header(props) {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        <i class="fa-duotone fa-newspaper"></i> Blog and News
+                        <i className="fa-duotone fa-newspaper"></i> Blog and News
                         </a>
                       </li>
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        <i class="fa-duotone fa-indian-rupee-sign"></i> Make Payment
+                        <i className="fa-duotone fa-indian-rupee-sign"></i> Make Payment
                         </a>
                       </li>
                       <li className="nav-item">
                         <a className="dropdown-item" href="#">
-                        <i class="fa-duotone fa-messages-question"></i> Contact Us
+                        <i className="fa-duotone fa-messages-question"></i> Contact Us
                         </a>
                       </li>
                     </ul>
@@ -494,8 +494,8 @@ export default function Header(props) {
                   </ul>
                 </li>
                 <li className="nav-item">
-                <button className="btn btn-link" data-hide-on-theme='light' onClick={() => setTheme('light')}><i class="fa-duotone fa-1-5-x fa-sun-bright"></i></button>
-                <button className="btn btn-link" data-hide-on-theme='dark' onClick={() => setTheme('dark')}><i class="fa-duotone fa-1-5-x fa-moon"></i></button>
+                <button className="btn btn-link" data-hide-on-theme='light' onClick={() => setTheme('light')}><i className="fa-duotone fa-1-5-x fa-sun-bright"></i></button>
+                <button className="btn btn-link" data-hide-on-theme='dark' onClick={() => setTheme('dark')}><i className="fa-duotone fa-1-5-x fa-moon"></i></button>
                 </li>
                 <li className="nav-item d-lg-none">
                   <button className="hamburger offcanvas-nav-btn">
