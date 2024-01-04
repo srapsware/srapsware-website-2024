@@ -1,9 +1,7 @@
 import Image from 'next/image'
 
 export default function Footer() {
-  const getCurrentYear = () => {
-    return new Date().getFullYear();
-  };
+  const getCurrentYear = () => new Date().getFullYear();
 
   return (
     <>
