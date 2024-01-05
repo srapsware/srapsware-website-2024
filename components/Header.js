@@ -55,7 +55,7 @@ export default function Header(props) {
                     <ul className="dropdown-menu mega-menu">
                       <li className="mega-menu-content">
                         <div className="row gx-0 gx-lg-3">
-                          <div className="col-lg-4">
+                          <div className="col-lg-3">
                             <h6 className="dropdown-header">Web developments</h6>
                             <ul className="list-unstyled cc-1 pb-lg-1">
                               <li>
@@ -107,288 +107,68 @@ export default function Header(props) {
                                 </a>
                               </li>
                             </ul>
-                            <h6 className="dropdown-header mt-lg-6">
-                              Styleguide
-                            </h6>
-                            <ul className="list-unstyled cc-2">
+                          
+                          </div>
+                          <div className="col-lg-3">
+                            <h6 className="dropdown-header">Mobile App</h6>
+                            <ul className="list-unstyled cc-1 pb-lg-1">
                               <li>
                                 <a
                                   className="dropdown-item"
-                                  href="./docs/styleguide/colors.html"
+                                  href="#"
+                                ><i className="fa-brands fa-android"></i> Android App Development</a>
+                              </li>
+                              <li>
+                                <a
+                                  className="dropdown-item"
+                                  href="#"
                                 >
-                                  Colors
+                                  <i className="fa-brands fa-app-store-ios"></i> iOS App Development
                                 </a>
                               </li>
                               <li>
                                 <a
                                   className="dropdown-item"
-                                  href="./docs/styleguide/fonts.html"
+                                  href="#"
                                 >
-                                  Fonts
+                                  <i className="fa-solid fa-mobile-screen"></i> Mobile site design
                                 </a>
+                              </li>
+                              
+                            </ul>
+                            <h6 className="dropdown-header pt-5">Browser Extension</h6>
+                            <ul className="list-unstyled cc-1 pb-lg-1">
+                              <li>
+                                <a
+                                  className="dropdown-item"
+                                  href="#"
+                                ><i class="fa-brands fa-chrome"></i> Google Chrome Extension</a>
                               </li>
                               <li>
                                 <a
                                   className="dropdown-item"
-                                  href="./docs/styleguide/icons-svg.html"
+                                  href="#"
                                 >
-                                  SVG Icons
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/styleguide/icons-font.html"
-                                >
-                                  Font Icons
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/styleguide/illustrations.html"
-                                >
-                                  Illustrations
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/styleguide/backgrounds.html"
-                                >
-                                  Backgrounds
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/styleguide/misc.html"
-                                >
-                                  Misc
+                                  <i class="fa-brands fa-firefox-browser"></i> Mozilla Firefox Extension
                                 </a>
                               </li>
                             </ul>
                           </div>
-                          {/*/column */}
-                          <div className="col-lg-8">
-                            <h6 className="dropdown-header">Elements</h6>
-                            <ul className="list-unstyled cc-3">
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/accordion.html"
-                                >
-                                  Accordion
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/alerts.html"
-                                >
-                                  Alerts
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/animations.html"
-                                >
-                                  Animations
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/avatars.html"
-                                >
-                                  Avatars
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/background.html"
-                                >
-                                  Background
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/badges.html"
-                                >
-                                  Badges
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/buttons.html"
-                                >
-                                  Buttons
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/card.html"
-                                >
-                                  Card
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/carousel.html"
-                                >
-                                  Carousel
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/dividers.html"
-                                >
-                                  Dividers
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/form-elements.html"
-                                >
-                                  Form Elements
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/image-hover.html"
-                                >
-                                  Image Hover
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/image-mask.html"
-                                >
-                                  Image Mask
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/lightbox.html"
-                                >
-                                  Lightbox
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/player.html"
-                                >
-                                  Media Player
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/modal.html"
-                                >
-                                  Modal
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/pagination.html"
-                                >
-                                  Pagination
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/progressbar.html"
-                                >
-                                  Progressbar
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/shadows.html"
-                                >
-                                  Shadows
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/shapes.html"
-                                >
-                                  Shapes
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/tables.html"
-                                >
-                                  Tables
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/tabs.html"
-                                >
-                                  Tabs
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/text-animations.html"
-                                >
-                                  Text Animations
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/text-highlight.html"
-                                >
-                                  Text Highlight
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/tiles.html"
-                                >
-                                  Tiles
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/tooltips-popovers.html"
-                                >
-                                  Tooltips &amp; Popovers
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  className="dropdown-item"
-                                  href="./docs/elements/typography.html"
-                                >
-                                  Typography
-                                </a>
-                              </li>
+                          <div className="col-lg-6">
+                            <h6 className="dropdown-header">Other Services</h6>
+                            <ul className="list-unstyled cc-2">
+                            <li><a className="dropdown-item" href="#"><i class="fa-solid fa-rectangles-mixed"></i> Hosting billing and support</a></li>
+															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-house-laptop"></i> Remote support/maintenance</a></li>
+															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server installation/monitoring</a></li>
+															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-file-export"></i> Data extraction Services</a></li>
+															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-database"></i> Database management & uses</a></li>
+															<li><a className="dropdown-item" href="#"><i class="fa-duotone fa-server"></i> Apache and my SQL issues</a></li>
+															<li><a className="dropdown-item" href="#"><i class="fa-brands fa-cpanel"></i> Hosting panel installation</a></li>
+															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-warehouse"></i> Hosting Automation</a></li>
+															<li><a className="dropdown-item" href="/services/fix-your-hacked-website-immediately/"><i class="fa-duotone fa-user-secret"></i> Fix Your hacked Website</a></li>
+                              <li><a className="dropdown-item" href="#"><i class="fa-solid fa-envelopes"></i> Email marketing</a></li>
+                              <li><a className="dropdown-item" href="#"><i class="fa-solid fa-folder-magnifying-glass"></i> Search Engine Optimization</a></li>
+															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-icons"></i> Social Media Optimization</a></li>
                             </ul>
                           </div>
                           {/*/column */}

@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Meta from "@components/Meta";
 import Header from "@components/Header";
+import PortfolioSlider from "@components/PortfolioSlider";
 import Footer from "@components/Footer";
 import Js from "@components/Js";
 
@@ -49,6 +50,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        
+        <PortfolioSlider />
+      
       </div>
 
       <Footer />
