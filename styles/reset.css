@@ -242,3 +242,11 @@ h2.display-6.mb-3 {
   display: none;
 }
 
+.LanguageSwitcher {
+    border: none;
+    background-color: transparent !important;
+    padding: 0 2rem 0 1rem;
+    color: var(--heading-color);
+    font-weight: 700;
+    font-size: var(--bs-nav-link-font-size);
+}

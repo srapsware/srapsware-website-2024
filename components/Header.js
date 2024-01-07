@@ -10,8 +10,6 @@ import { useRouter } from "next/router";
 
 
 export default function Header(props) {
-  const router = useRouter();
-  //console.log(router);
   const { theme, setTheme } = useTheme();
   return (
     <>
@@ -248,7 +246,7 @@ export default function Header(props) {
                 <li className="nav-item dropdown language-select text-uppercase">
 
                   <LanguageSwitcher />
-                  
+
                 </li>
                 <li className="nav-item">
                 <button className="btn btn-link" data-hide-on-theme='light' onClick={() => setTheme('light')}><i className="fa-duotone fa-1-5-x fa-sun-bright"></i></button>
