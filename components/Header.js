@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import SocialLinks from "@components/SocialLinks";
+import LanguageSwitcher from "@components/LanguageSwitcher";
 import JsLoader from "@components/JsLoader";
 import { useEffect } from "react";
 
@@ -171,13 +172,13 @@ export default function Header(props) {
 															<li><a className="dropdown-item" href="#"><i className="fa-solid fa-icons"></i> Social Media Optimization</a></li>
                             </ul>
                           </div>
-                          {/*/column */}
+                          
                         </div>
-                        {/*/.row */}
+                        
                       </li>
-                      {/*/.mega-menu-content*/}
+                      
                     </ul>
-                    {/*/.dropdown-menu */}
+                    
                   </li>
                   <li className="nav-item dropdown dropdown-mega">
                     <a className="nav-link" href="/" >
@@ -241,37 +242,13 @@ export default function Header(props) {
               </div>
               
             </div>
-            {/* /.navbar-collapse */}
+          
             <div className="navbar-other w-100 d-flex ms-auto">
               <ul className="navbar-nav flex-row align-items-center ms-auto">
                 <li className="nav-item dropdown language-select text-uppercase">
-                  <a
-                    className="nav-link dropdown-item dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    En
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a className="dropdown-item" href="#">
-                        En
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="dropdown-item" href="#">
-                        Fr
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="dropdown-item" href="#">
-                        Hi
-                      </a>
-                    </li>
-                  </ul>
+
+                  <LanguageSwitcher />
+                  
                 </li>
                 <li className="nav-item">
                 <button className="btn btn-link" data-hide-on-theme='light' onClick={() => setTheme('light')}><i className="fa-duotone fa-1-5-x fa-sun-bright"></i></button>
@@ -283,15 +260,15 @@ export default function Header(props) {
                   </button>
                 </li>
               </ul>
-              {/* /.navbar-nav */}
+              
             </div>
-            {/* /.navbar-other */}
+           
           </div>
-          {/* /.container */}
+          
         </nav>
-        {/* /.navbar */}
         
-        {/* /.offcanvas */}
+        
+       
       </header>
     </>
   );
