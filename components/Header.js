@@ -142,14 +142,14 @@ export default function Header(props) {
                                 <a
                                   className="dropdown-item"
                                   href="#"
-                                ><i class="fa-brands fa-chrome"></i> Google Chrome Extension</a>
+                                ><i className="fa-brands fa-chrome"></i> Google Chrome Extension</a>
                               </li>
                               <li>
                                 <a
                                   className="dropdown-item"
                                   href="#"
                                 >
-                                  <i class="fa-brands fa-firefox-browser"></i> Mozilla Firefox Extension
+                                  <i className="fa-brands fa-firefox-browser"></i> Mozilla Firefox Extension
                                 </a>
                               </li>
                             </ul>
@@ -157,18 +157,18 @@ export default function Header(props) {
                           <div className="col-lg-6">
                             <h6 className="dropdown-header">Other Services</h6>
                             <ul className="list-unstyled cc-2">
-                            <li><a className="dropdown-item" href="#"><i class="fa-solid fa-rectangles-mixed"></i> Hosting billing and support</a></li>
-															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-house-laptop"></i> Remote support/maintenance</a></li>
-															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server installation/monitoring</a></li>
-															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-file-export"></i> Data extraction Services</a></li>
-															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-database"></i> Database management & uses</a></li>
-															<li><a className="dropdown-item" href="#"><i class="fa-duotone fa-server"></i> Apache and my SQL issues</a></li>
-															<li><a className="dropdown-item" href="#"><i class="fa-brands fa-cpanel"></i> Hosting panel installation</a></li>
-															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-warehouse"></i> Hosting Automation</a></li>
-															<li><a className="dropdown-item" href="/services/fix-your-hacked-website-immediately/"><i class="fa-duotone fa-user-secret"></i> Fix Your hacked Website</a></li>
-                              <li><a className="dropdown-item" href="#"><i class="fa-solid fa-envelopes"></i> Email marketing</a></li>
-                              <li><a className="dropdown-item" href="#"><i class="fa-solid fa-folder-magnifying-glass"></i> Search Engine Optimization</a></li>
-															<li><a className="dropdown-item" href="#"><i class="fa-solid fa-icons"></i> Social Media Optimization</a></li>
+                            <li><a className="dropdown-item" href="#"><i className="fa-solid fa-rectangles-mixed"></i> Hosting billing and support</a></li>
+															<li><a className="dropdown-item" href="#"><i className="fa-solid fa-house-laptop"></i> Remote support/maintenance</a></li>
+															<li><a className="dropdown-item" href="#"><i className="fa-solid fa-server"></i> Server installation/monitoring</a></li>
+															<li><a className="dropdown-item" href="#"><i className="fa-solid fa-file-export"></i> Data extraction Services</a></li>
+															<li><a className="dropdown-item" href="#"><i className="fa-solid fa-database"></i> Database management & uses</a></li>
+															<li><a className="dropdown-item" href="#"><i className="fa-duotone fa-server"></i> Apache and my SQL issues</a></li>
+															<li><a className="dropdown-item" href="#"><i className="fa-brands fa-cpanel"></i> Hosting panel installation</a></li>
+															<li><a className="dropdown-item" href="#"><i className="fa-solid fa-warehouse"></i> Hosting Automation</a></li>
+															<li><a className="dropdown-item" href="/services/fix-your-hacked-website-immediately/"><i className="fa-duotone fa-user-secret"></i> Fix Your hacked Website</a></li>
+                              <li><a className="dropdown-item" href="#"><i className="fa-solid fa-envelopes"></i> Email marketing</a></li>
+                              <li><a className="dropdown-item" href="#"><i className="fa-solid fa-folder-magnifying-glass"></i> Search Engine Optimization</a></li>
+															<li><a className="dropdown-item" href="#"><i className="fa-solid fa-icons"></i> Social Media Optimization</a></li>
                             </ul>
                           </div>
                           {/*/column */}

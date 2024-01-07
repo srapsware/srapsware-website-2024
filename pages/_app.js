@@ -1,5 +1,5 @@
-import "/styles/style.css";
 import "/styles/plugins.css";
+import "/styles/style.css";
 import "/styles/fontawesome.css";
 import "/styles/theme-change.css";
 import "/styles/reset.css";
