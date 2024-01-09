@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link';
+import { useRouter } from "next/router";
 
 export default function Footer() {
   const getCurrentYear = () => new Date().getFullYear();
-
+  const router = useRouter();
   return (
     <>
         <footer className="bg-navy text-inverse">
@@ -106,7 +108,7 @@ export default function Footer() {
                       <a href="#">Make Payment</a>
                     </li>
                     <li>
-                      <a href="#">Contact Us</a>
+                      <Link href="/contact-us/" locale={router.locale}>Contact Us</Link>
                     </li>
                     <li>
                       <a href="#">Cancellation/Refund policies</a>

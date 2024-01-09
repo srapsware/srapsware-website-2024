@@ -11,13 +11,14 @@ import { useRouter } from "next/router";
 
 export default function Header(props) {
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
   return (
     <>
       <header className="wrapper bg-soft-primary fixed-top">
         <nav className="navbar navbar-expand-lg center-nav transparent navbar-light">
           <div className="container flex-lg-row flex-nowrap align-items-center">
             <div className="navbar-brand w-100">
-              <Link href={'/'}>
+              <Link href={'/'} locale={router.locale}> 
                 <img
                   src="/assets/img/logo.png"
                   srcSet="/assets/img/logo@2x.png 2x"
@@ -27,7 +28,7 @@ export default function Header(props) {
             </div>
             <div className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
               <div className="offcanvas-header d-lg-none">
-                <h3 className="text-white fs-30 mb-0">Sandbox</h3>
+                <h3 className="text-white fs-30 mb-0">Srapsware</h3>
                 <button
                   type="button"
                   className="btn-close btn-close-white"
@@ -38,9 +39,8 @@ export default function Header(props) {
               <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul className="navbar-nav">
                   <li className="nav-item dropdown dropdown-mega">
-                    <Link href={'/'} className="nav-link" >
+                    <Link href={'/'} className="nav-link" locale={router.locale}>
                       Home
-                    
                     </Link>
                   </li>
                   <li className="nav-item dropdown dropdown-mega">
@@ -229,9 +229,11 @@ export default function Header(props) {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" href={"/contact-us/"} locale={router.locale}>
+                        
                         <i className="fa-duotone fa-messages-question"></i> Contact Us
-                        </a>
+                        
+                        </Link>
                       </li>
                     </ul>
                   </li>

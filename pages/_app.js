@@ -6,6 +6,7 @@ import "/styles/reset.css";
 
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
+
 function MyApp({ Component, pageProps }) {
   return (
     <NextThemesProvider>
