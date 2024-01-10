@@ -6,12 +6,15 @@ import LanguageSwitcher from "@components/LanguageSwitcher";
 import JsLoader from "@components/JsLoader";
 import { useEffect } from "react";
 
-import { useRouter } from "next/router";
 
+import { useRouter } from "next/router";
+import { useTranslation } from 'next-i18next'
+//import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Header(props) {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
+  const { t } = useTranslation('header')
   return (
     <>
       <header className="wrapper bg-soft-primary fixed-top">
@@ -40,7 +43,7 @@ export default function Header(props) {
                 <ul className="navbar-nav">
                   <li className="nav-item dropdown dropdown-mega">
                     <Link href={'/'} className="nav-link" locale={router.locale}>
-                      Home
+                    {t('home')}
                     </Link>
                   </li>
                   <li className="nav-item dropdown dropdown-mega">
@@ -49,7 +52,7 @@ export default function Header(props) {
                       href="#"
                       data-bs-toggle="dropdown"
                     >
-                      Services
+                      {t('services')}
                     </a>
                     <ul className="dropdown-menu mega-menu">
                       <li className="mega-menu-content">
@@ -180,7 +183,7 @@ export default function Header(props) {
                   </li>
                   <li className="nav-item dropdown dropdown-mega">
                     <a className="nav-link" href="/" >
-                      Portfolio
+                    {t('portfolio')}
                     </a>
                   </li>
                   <li className="nav-item dropdown">
@@ -189,7 +192,7 @@ export default function Header(props) {
                       href="#"
                       data-bs-toggle="dropdown"
                     >
-                      Company
+                      {t('company')}
                     </a>
                     <ul className="dropdown-menu">
                       <li className="nav-item">
@@ -215,7 +218,7 @@ export default function Header(props) {
                       href="#"
                       data-bs-toggle="dropdown"
                     >
-                      Support
+                      {t('support')}
                     </a>
                     <ul className="dropdown-menu">
                       <li className="nav-item">

@@ -1,9 +1,7 @@
+const { i18n } = require('./next-i18next.config');
 module.exports = {
   trailingSlash: true,
-  i18n: {
-    locales: ["en", "fr", "hi"],
-    defaultLocale: "en",
-  },
+  i18n,
   images: {
     remotePatterns: [
       {
